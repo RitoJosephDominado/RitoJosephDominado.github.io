@@ -1,7 +1,3 @@
-alert('huh');
-
-// import { Painter } from "Painter";
-
 window.onload = function(){
     const sim = new Simulation(15, 15);
     sim.addAnimal(new Animal('M', 150), 3, 3);
