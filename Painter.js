@@ -17,8 +17,8 @@ class Painter extends p5{
                     this.fill(150, 150, 150);
                 }else{
                     animal = sim.grid[column][row].animal;
-                    red = animal.sex === "M" ? 0 : 255;
-                    green = animal.size;
+                    red = animal.sex === "M" ? 255 : 0;
+                    green = animal.sex === "M" ? 0 : 255;
                     this.fill(red, blue, green);
                 }
 
