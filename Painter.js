@@ -10,15 +10,15 @@ class Painter extends p5{
         let animal = null;
         let red = 0;
         let green = 0;
-        let blue = 30;
+        let blue = 10;
         for(let column = 0; column < sim.numColumns; column++){
             for(let row = 0; row < sim.numRows; row++){
                 if(sim.grid[column][row].animal == null){
                     this.fill(150, 150, 150);
                 }else{
                     animal = sim.grid[column][row].animal;
-                    red = animal.sex === "M" ? 255 : 20;
-                    green = animal.sex === "M" ? 20 : 255;
+                    red = animal.sex === "M" ? 255 : 5;
+                    green = animal.sex === "M" ? 5 : 255;
                     this.fill(red, blue, green);
                 }
 
